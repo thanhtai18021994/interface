@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./fontawesome-free-5.15.1-web/css/all.min.css">
+    <style>
+        .modal {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: grey;
+            opacity: 0.2;
+            z-index: 2;
+        }
+        
+        .modal-content {
+            width: fit-content;
+            height: fit-content;
+            padding: 16px;
+            box-shadow: 1px 12px 14px #ccc;
+            background-color: #fff;
+            z-index: 3;
+            border-radius: 5px;
+        }
+        
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            border-bottom: 1px solid #ccc;
+        }
+        
+        .close {
+            border: none;
+            outline: none;
+            background: none;
+            height: fit-content;
+            font-size: 24px;
+            padding: 8px;
+            cursor: pointer;
+        }
+        
+        .close i {
+            font-size: 24px;
+            color: #222;
+            line-height: 100%;
+        }
+        
+        .modal-heading {
+            font-size: 24px;
+            padding: 8px;
+            color: #212529;
+            height: fit-content;
+            margin: 0;
+            font-weight: 600;
+        }
+        
+        .modal-body {
+            width: 420px;
+            margin: 24px 16px;
+            padding: 12px 0;
+        }
+        
+        .modal-footer {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .btn {
+            border-radius: 5px;
+            padding: 10px 12px;
+            border: none;
+            min-width: 60px;
+            cursor: pointer;
+            margin: 0 12px;
+        }
+        
+        .btn-danger {
+            background-color: rgb(238, 56, 56);
+            color: white;
+        }
+        
+        .btn-danger:hover {
+            background-color: rgb(226, 85, 85);
+        }
+        
+        .btn-primary {
+            background-color: rgb(56, 87, 187);
+            color: #fff;
+        }
+        
+        .btn-primary:hover {
+            background-color: rgb(101, 121, 187);
+        }
+    </style>
+</head>
+
+
+<body>
+    <h2>Modal</h2>
+    <button class="btn modal-control"> Open Modal</button>
+    <div class="modal">
+        <div class="overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-heading">Modal heading</h4>
+                <button class="close modal-control"><i class="far fa-window-close"></i></button>
+            </div>
+            <div class="modal-body">
+                Modal body ...
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary modal-control">Đồng ý</button>
+                <button class="btn btn-danger modal-control">Đóng</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".modal-control").click(function() {
+                $(".modal").slideToggle(300);
+            });
+        });
+    </script>
+</body>
+
+</html>

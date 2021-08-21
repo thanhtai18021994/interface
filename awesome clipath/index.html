@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            background: #EEE;
+            margin: 0;
+            height: 100vh;
+            display: grid;
+            justify-items: center;
+            align-items: center;
+        }
+        
+        .info {
+            cursor: pointer;
+            background: #2196F3;
+            box-shadow: 1px 1px 4px #848484;
+            height: 200px;
+            width: 300px;
+            color: white;
+            font-size: 20px;
+            padding: 20px;
+            font-family: sans-serif;
+            display: grid;
+            grid-template-columns: 40px 1fr;
+            border-radius: 6px;
+            -webkit-clip-path: circle(18px at 40px 40px);
+            clip-path: circle(100px at 40px 40px);
+            transition: all 5s linear;
+        }
+        
+        .info:hover {
+            clip-path: circle(400px at 240px 140px);
+            -webkit-clip-path: circle(200px at 40px 40px);
+        }
+        
+        .info:hover .info-icon {
+            background: #FF69B4;
+        }
+        
+        .info-icon {
+            /* height: initial; */
+            border-radius: 20px;
+            padding: 8px 18px;
+            height: 40px;
+            width: 40px;
+            background: #FF1493;
+        }
+        
+        .info-text {
+            padding: 8px 12px;
+        }
+        
+        .info-description {
+            margin-top: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="info">
+        <div class="info-icon">i</div>
+        <div class="info-text"><b>Fact:</b>
+            <div class="info-description">The most beautiful things in life are always hidden.</div>
+        </div>
+    </div>
+</body>
+
+</html>

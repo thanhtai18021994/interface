@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function sleep() {
+            console.log("abc");
+        }
+        var promise = new Promise(function(resovle, reject) {
+            resovle();
+            // reject('abc');
+        })
+        promise.then(function() {
+            return Promise.resolve("abc")
+        }).then(function(a) {
+            console.log("successful! abc" + a);
+        }).catch((b) => {
+            console.log("failly!" + b);
+        }).finally(() => {
+            console.log("done!");
+        })
+    </script>
+</body>
+
+</html>

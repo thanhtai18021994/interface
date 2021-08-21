@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            width: 200px;
+            height: 28px;
+            position: relative;
+        }
+        
+        .input {
+            width: 100%;
+            height: 100%;
+            padding-left: 70px;
+            border: none;
+            border-bottom: 1px solid #666;
+            outline: none;
+            min-width: 100%;
+        }
+        
+        .title {
+            position: absolute;
+            top: 40%;
+            left: 12%;
+            transition: 0.15s;
+        }
+        
+        .input:focus~.title {
+            top: 0;
+        }
+        
+        .input:focus {
+            padding-left: 10px;
+            width: 260px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form">
+        <input class="input" type="text">
+        <label class="title" for="">Enter name</label>
+    </div>
+</body>
+
+</html>

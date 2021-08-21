@@ -1,0 +1,198 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbars {
+    padding-top: 12px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    width: 100%;
+}
+
+.navbar-title {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar-contract span {
+    margin-right: 12px;
+}
+
+.navbar-contract span i {
+    color: #ccc;
+    padding: 0 8px;
+}
+
+.navbar-menu {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 12px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.navbar-menu li {
+    list-style: none;
+    padding: 0 24px;
+}
+
+.navbar-menu li a {
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'guccifont';
+    font-weight: 300;
+    color: white;
+}
+
+.navbar-cart {}
+
+.navbar-cart span {
+    margin-right: 12px;
+}
+
+.navbar-cart span i {
+    padding: 0 8px;
+}
+
+.app {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.myslide {
+    border: 1px solid #ccc;
+}
+
+.title-product {
+    font-size: 24px;
+}
+
+.price-product {
+    font-size: 14px;
+}
+
+.promotion {
+    border: 1px solid #ccc;
+    border-radius: 2px;
+}
+
+.promotion-content {
+    font-size: 13px;
+    color: #333;
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+
+.promotion-content div {
+    margin: 8px 0;
+}
+
+.promotion-header {
+    background-color: #ccc;
+    padding: 8px;
+}
+
+.promotion-header h4 {
+    font-size: 14px;
+}
+
+.lable-number {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: rgb(99, 96, 255);
+    border-radius: 8px;
+    text-align: center;
+    line-height: 16px;
+    color: white;
+    font-size: 8px;
+    margin-right: 4px;
+}
+
+.stocking-lable {
+    font-size: 14px;
+    color: rgb(2, 92, 2);
+    margin-top: 8px;
+    font-weight: 600;
+}
+
+.location span {
+    color: #333;
+    font-size: 13px;
+}
+
+.location-icon {
+    margin-right: 8px;
+}
+
+.description-product p {
+    color: rgb(2, 92, 2);
+    font-size: 13px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.description-product div>span {
+    font-size: 13px;
+}
+
+.description-product>div>span>i {
+    padding-right: 8px;
+}
+
+.payment-shopping {
+    padding: 4px 0;
+}
+
+.payment-shopping button {
+    width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    line-height: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: rgb(241, 106, 9);
+}
+
+.payment-shopping button a {
+    color: white;
+    text-decoration: none;
+}
+
+.payment-style {
+    display: flex;
+    justify-content: left;
+}
+
+.payment-style button {
+    width: 47%;
+    border: 1px solid #ccc;
+    background-color: #288ad6;
+    padding: 12px 0;
+    line-height: 100%;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.payment-style a {
+    color: white;
+    text-decoration: none;
+}
+
+.payment-style div {
+    width: 6%;
+}
+
+.payment-style pre {
+    color: white;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 200;
+    font-family: 'Roboto', sans-serif;
+}
